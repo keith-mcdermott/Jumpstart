@@ -62,22 +62,37 @@ nav .container {
 .jumbotron p {
   margin: 2.8rem;
 }
-.jumbotron p,
-.jumbotron h1 {
-  color:white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.jumbotron {
+
+.jumbotron-bike {
   background-image:url("../images/jumbotron-bike.jpg");
+}
+
+.jumbotron-bottles {
+  background-image:url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-flowers {
+  background-image:url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-duffel {
+  background-image:url("../images/jumbotron-duffel.jpg");
+}
+
+.jumbotron{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 44rem;
+  color:white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.jumbotron .container {
-  margin-top: 11.85rem;
-  margin-bottom: 11.85rem;
-  width: 51.3rem;
+.relative-wrapper {
+  position: relative;
+  top:-16rem;
+  width: 100%;
+  text-align: center;
 }
 /* Same styling applies to footer button */
 .btn-primary {
@@ -105,6 +120,9 @@ nav .container {
 .product-categories {
   color: #399bd1;
 }
+#featured {
+  margin-top: -5rem; /* To account for relatively positioned button */
+}
 
 /* Products section */
 #projects {
@@ -126,11 +144,9 @@ strong {
   max-width:42rem;
 }
 
-
 @media only screen and (max-width:767px){
   .jumbotron h1 {
     font-family: Monoton;
     font-size: 5.7rem;
   }
-  .
 }
